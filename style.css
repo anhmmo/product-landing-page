@@ -269,7 +269,7 @@ footer ul li:hover{
     }
     
     .pricing-box{
-        width: 60%;
+        width: 50%;
     }
 }
 
@@ -290,6 +290,10 @@ footer ul li:hover{
     
     footer ul{
         justify-content: center;
+    }
+
+    .pricing-box{
+        width: 60%;
     }
 }
 
@@ -322,6 +326,10 @@ footer ul li:hover{
     .features-box h2, .description{
         text-align: center;
     }
+
+    .pricing-box{
+        width: 80%;
+    }
 }
 
 
@@ -349,6 +357,14 @@ footer ul li:hover{
 
     .header-contact{
         width: 100%;
+    }
+
+    .pricing-box{
+        width: 98%;
+    }
+
+    footer p{
+        margin-right: 0;
     }
 }
 
