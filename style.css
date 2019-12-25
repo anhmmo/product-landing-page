@@ -26,6 +26,11 @@ body{
     background-color: var(--color-gray);
 }
 
+a{
+    text-decoration: none;
+    color: white;
+}
+
 li{
     list-style: none;
 }
@@ -173,6 +178,102 @@ button:hover{
     
 }
 
+
+#pricing{
+    display: flex;
+    justify-content: center;
+
+}
+
+.pricing-box{
+    width: 33.33%;
+    border: 1.5px solid tomato;
+    margin: 1rem;
+}
+
+.pricing-box h3{
+    padding: 2rem;
+    background-color: var(--color-pink);
+    text-align: center;
+    color: var(--color-gray);
+}
+
+.pricing-box h1{
+    padding: 1.6rem 0;
+    color: var(--color-pink);
+}
+
+.pricing-box ul{
+    text-align: center;
+}
+
+.pricing-box ul li{
+    text-align: center;
+    padding: 0.5rem;
+}
+
+.button{
+    width: 10rem;
+    height: 3.6rem;
+    margin: 2rem auto;
+    background-color: tomato;
+    border-radius: 0.5rem;
+    font-size: 2rem;
+    
+}
+
+.button:hover{
+    
+    background-color: var(--color-red);
+    transition: all 500ms;
+}
+
+
+footer{
+    display: flex;
+    flex-direction: column;
+    height: 15vh;
+    background-color: var(--color-pink);
+    margin-top: 3rem;
+}
+
+footer p{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-right: 2rem;
+    
+}
+
+footer ul{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-right: 2rem;
+    margin-top: 3rem;
+    margin-bottom: 1rem;
+}
+
+footer ul li{
+    margin:0 1rem;
+}
+
+
+footer ul li:hover{
+    cursor: pointer;
+}
+
+@media(max-width: 900px){ 
+    #pricing{
+        flex-wrap: wrap;
+    }
+    
+    .pricing-box{
+        width: 60%;
+    }
+}
+
+
 @media(max-width: 650px){ 
     .main-nav ul li a{
         padding: 1rem;
@@ -181,6 +282,14 @@ button:hover{
 
     #how-it-work iframe{
         max-width: 96%;
+    }
+
+    footer p{
+        justify-content: center; 
+    }
+    
+    footer ul{
+        justify-content: center;
     }
 }
 
