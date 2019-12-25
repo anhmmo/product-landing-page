@@ -3,5 +3,5 @@ Learn how used flexbox to create an responsive product landing website in html a
 # Other demo links
 * [preview1](https://metropolia.website/project/landing-page/)
 * [preview2](https://anhmmo.github.io/landing-page/)
-demo picture
+
 ![Alt text](https://metropolia.website/project/landing-page/landing.png "Optional title")
