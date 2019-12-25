@@ -106,7 +106,7 @@ li{
 .header-contact{
     background-color: var(--color-blue);
     margin: 74px auto;
-    padding: 8rem;
+    padding: 6rem 0;
     border-top: 2px solid white;
 }
 
@@ -123,12 +123,39 @@ form{
 }
 
 input{
+    display: block;
+    outline: 0;
+    border: 0;
     max-width: 30rem;
-    margin: 0 auto;
+    width: 100%;
+    margin: 3rem auto;
+    padding: 0.8rem 0 0.8rem 1rem;
+    border-radius: 10px;
 }
+
+
+
 button{
-    
+    display: block;
+    outline: 0;
+    border: 0;
+    color: white;
+    background-color: var(--color-pink);
+    max-width: 20rem;
+    width: 100%;
+    border-radius: 2rem;
+    padding: 0.8rem;
     margin: 0 auto;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-weight: 600;
+    line-height: 1.5;
+}
+
+button:hover{
+    background-color: var(--color-red);
+    transition: background-color 500ms ease-in-out;
+    
 }
 
 
