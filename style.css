@@ -1,0 +1,26 @@
+@import "https://fonts.googleapis.com/css?family=Lato:400,700";
+:root{
+    --color-red: #f0134d;
+    --color-pink: #ff6f5e;
+    --color-gray: #f5f0e3;
+    --color-blue: #40bfc1;
+    --color-white: white;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+
+body{
+    font-size: 1.6rem;
+    font-family: 'Lato', sans-serif;
+    color: var(--color-white);
+}
+
