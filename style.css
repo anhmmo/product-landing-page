@@ -1,6 +1,7 @@
 @import "https://fonts.googleapis.com/css?family=Lato:400,700";
 :root{
     --color-red: #f0134d;
+    --color-reddark: #F44336;
     --color-pink: #ff6f5e;
     --color-gray: #f5f0e3;
     --color-blue: #40bfc1;
@@ -21,6 +22,89 @@ html{
 body{
     font-size: 1.6rem;
     font-family: 'Lato', sans-serif;
-    color: var(--color-white);
+    width: 100%;
 }
+
+li{
+    list-style: none;
+}
+
+.main-nav{
+    display: flex;
+    align-items: center;
+    background-color: var(--color-reddark);
+    padding: 1rem;
+    width: 100%;
+    position: fixed;
+    top: 0;
+}
+
+.main-nav .logo{
+    width: 35%;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.main-nav ul{
+    display: flex;
+    justify-content: flex-end;
+    width: 65%;
+}
+
+.main-nav ul li a{
+    text-decoration: none;
+    color: var(--color-white);
+    padding: 2.15rem;
+    font-size: 2rem;
+}
+
+.main-nav ul li a:hover{
+    background-color: var(--color-blue);
+    transition: background-color 500ms;
+}
+
+.logo img{
+    max-width: 30rem;
+    width: 100%;
+}
+
+@media(max-width: 650px){ 
+    .main-nav ul li a{
+        padding: 1rem;
+        font-size: 1.8rem;
+    }
+}
+
+@media(max-width: 500px){ 
+
+    .main-nav{
+        flex-direction: column;
+    }
+    
+    .main-nav ul, .main-nav .logo{
+        justify-content: center;
+        width: 100%;
+    }
+}
+
+@media(max-width: 300px){ 
+    .logo img{
+        max-width: 300px;
+        width: 100%;
+    }
+
+    .main-nav{
+        padding: 0.5rem;
+    }
+    .main-nav ul li a{
+        padding: 0 0.5rem;
+        font-size: 1.6rem;
+    }
+}
+
+.header-contact{
+    margin-top: 10rem;
+}
+
+
 
