@@ -17,12 +17,13 @@
 html{
     font-size: 62.5%;
     scroll-behavior: smooth;
+    
 }
 
 body{
     font-size: 1.6rem;
     font-family: 'Lato', sans-serif;
-    width: 100%;
+    
 }
 
 li{
@@ -88,32 +89,18 @@ li{
     }
 }
 
-@media(max-width: 300px){ 
-    .logo img{
-        max-width: 300px;
-        width: 100%;
-    }
 
-    .main-nav{
-        padding: 0.5rem;
-    }
-    .main-nav ul li a{
-        padding: 0 0.5rem;
-        font-size: 1.6rem;
-    }
-}
 
 .header-contact{
     background-color: var(--color-blue);
     margin: 74px auto;
-    padding: 6rem 0;
+    padding: 6rem 0 4rem 0;
     border-top: 2px solid white;
 }
 
 form, h1{
     text-align: center;
     color: white;
-    display: block;
 }
 
 form{
@@ -123,7 +110,6 @@ form{
 }
 
 input{
-    display: block;
     outline: 0;
     border: 0;
     max-width: 30rem;
@@ -133,10 +119,7 @@ input{
     border-radius: 10px;
 }
 
-
-
 button{
-    display: block;
     outline: 0;
     border: 0;
     color: white;
@@ -157,6 +140,36 @@ button:hover{
     transition: background-color 500ms ease-in-out;
     
 }
+
+
+@media(max-width: 300px){ 
+    .logo img{
+        max-width: 300px;
+        width: 100%;
+    }
+    .main-nav{
+        padding: 0.5rem;
+    }
+    .main-nav ul li a{
+        padding: 0 0.5rem;
+        font-size: 1.6rem;
+    }
+
+    input{
+        max-width: 70%;
+    }
+    
+    button{
+        max-width: 40%;
+        width: 100%;
+    }
+
+    .header-contact{
+        width: 100%;
+    }
+}
+
+
 
 
 
