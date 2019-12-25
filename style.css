@@ -23,7 +23,7 @@ html{
 body{
     font-size: 1.6rem;
     font-family: 'Lato', sans-serif;
-    
+    background-color: var(--color-gray);
 }
 
 li{
@@ -68,25 +68,6 @@ li{
 .logo img{
     max-width: 30rem;
     width: 100%;
-}
-
-@media(max-width: 650px){ 
-    .main-nav ul li a{
-        padding: 1rem;
-        font-size: 1.8rem;
-    }
-}
-
-@media(max-width: 500px){ 
-
-    .main-nav{
-        flex-direction: column;
-    }
-    
-    .main-nav ul, .main-nav .logo{
-        justify-content: center;
-        width: 100%;
-    }
 }
 
 
@@ -139,6 +120,99 @@ button:hover{
     background-color: var(--color-red);
     transition: background-color 500ms ease-in-out;
     
+}
+
+.container{
+    max-width: 1000px;
+    width: 100%;
+    align-items: center;
+    margin: 0 auto;
+}
+
+#features{
+    display: flex;
+    flex-direction: column;
+}
+
+.features-box{
+    display: flex;
+    padding: 2rem 0;
+}
+
+.icon{
+    width: 20vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.description{
+    width: 80vw;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.icon i{
+    font-size: 6rem;
+    color: var(--color-reddark);
+}
+
+
+
+#how-it-work{
+    display: flex;
+    justify-content: center;
+    margin: 4rem 0;
+}
+
+#how-it-work iframe{
+    max-width: 600px;
+    width: 100%;
+    margin: 0 auto;
+    
+}
+
+@media(max-width: 650px){ 
+    .main-nav ul li a{
+        padding: 1rem;
+        font-size: 1.8rem;
+    }
+
+    #how-it-work iframe{
+        max-width: 96%;
+    }
+}
+
+
+@media(max-width: 500px){ 
+
+    .main-nav{
+        flex-direction: column;
+    }
+    
+    .main-nav ul, .main-nav .logo{
+        justify-content: center;
+        width: 100%;
+    }
+
+    .icon{
+        width: 100vw;
+    }
+    
+    .description{
+        margin-top: 1rem;
+        width: 100vw;
+    }
+
+    .features-box{
+        flex-wrap: wrap;
+    }
+    
+
+    .features-box h2, .description{
+        text-align: center;
+    }
 }
 
 
